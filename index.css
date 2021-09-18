@@ -1,0 +1,817 @@
+@font-face {
+    font-family: "Segoe_UI";
+    src: url("fonts/SegoeUIBoldItalic.ttf");
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    background: #ffffff;
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media screen and (max-width : 1920px) {
+    /*/////////////////////////////////////////BAR MENU////////////////////////////////////////////////*/
+    header
+    {
+        /*Evitar seleccion con el raton*/
+        -moz-user-select: none; 
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none; 
+        /*/////////////////////////////////*/
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+        background: linear-gradient(150deg, rgba(255,255,255,1) 52%, rgba(0,136,255,1) 52%);
+        border: 1px solid black;
+        box-shadow: -1px 9px 5px -1px rgba(0,0,0,0.58);
+        -webkit-box-shadow: -1px 9px 5px -1px rgba(0,0,0,0.58);
+        -moz-box-shadow: -1px 9px 5px -1px rgba(0,0,0,0.58);
+    }
+
+    .Nav_bar
+    {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .logo
+    {
+        width: 150px;
+        height: 42px;
+    }
+
+    .barraNav
+    {
+        width: 40%;
+        height: 80%;
+        display: flex;
+        z-index: 1000;
+    }
+
+    .barraNav input[type="text"]
+    {
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        border-top: 2px solid black;
+        border-left: 2px solid black;
+        border-bottom: 2px solid black;
+        border-right: none;
+        padding-left: 2%;
+        outline: none;
+        font-family: "Segoe_UI";
+    }
+
+    .barraNav .unir{
+        background: #ffffff;
+        border-top: 2px solid black;
+        border-right: 2px solid black;
+        border-bottom: 2px solid black;
+        border-left: none;
+        height: 100%;
+        width: 40px;
+        display: flex;
+        align-items: center;
+    }
+
+    .barraNav input[type="image"]
+    {
+        width: 25px;
+        height: 25px;
+    }
+
+    .inicio
+    {
+        width: 150px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .inicio a
+    {
+        font-family: "Segoe_UI";
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+
+    .carrito
+    {
+        width: 75px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .carrito a img {
+        width: 50px;
+        height: 40px;
+    }
+
+    /*//////////////////////////////////////////CONTENIDO/////////////////////////////////////////////////////////////*/
+    main
+    {
+        margin-top: 80px;
+    }
+
+    /*///////////////////////////////////////NAV BAR////////////////////////////////////////////////////////////////////*/
+
+    .Nav_bar2
+    {
+        /*Evitar seleccion con el raton*/
+        -moz-user-select: none; 
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none; 
+        /*/////////////////////////////////*/
+        width: 100%;
+        height: 75px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .cuadro1
+    {
+        width: 10%;
+        height: 100%;
+    }
+
+    .cuadro1 img
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    .cuadro2
+    {
+        width: 10%;
+        height: 100%;
+    }
+
+    .cuadro2 img
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    .nav_b
+    {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .nav_b  .card
+    {
+        width: calc(100%/4);
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+    }
+
+    .nav_b  .card a 
+    {
+        margin-top: 2%;
+        height: 95%;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    .nav_b  .card a img
+    {
+        width: 50px;
+        height: 50px;
+    }
+
+    .nav_b  .card a p 
+    {
+        font-family: "Segoe_UI";
+        color: #0088FF;
+        font-size: 15px;
+    }
+
+    /*/////////////////////////////////////////Carrusel////////////////////////////////////////////////*/
+    .CarruselBod
+    {
+        margin-top: 1%;
+        background-image: url("refacciones obj/bg_carrusel.png");
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        
+        height:calc(100*7px);
+        display: flex !important;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        box-shadow: 1px 4px 5px -1px rgba(141,141,141,0.75);
+        -webkit-box-shadow: 1px 4px 5px -1px rgba(141,141,141,0.75);
+        -moz-box-shadow: 1px 4px 5px -1px rgba(141,141,141,0.75);
+        border: 1px solid rgba(0, 0, 0, 0.473);
+    }
+    
+    #carousel1
+    {
+        width: 100%;
+        height: 100%;
+        /*Evitar seleccion con el raton*/
+        -moz-user-select: none; 
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none; 
+        /*/////////////////////////////////*/
+    }
+
+
+    .carousel-indicators li 
+    {
+        width:10px !important;
+        height: 10px !important;
+        border-radius: 50%;
+    }
+
+    #carousel1 .carousel-inner .botonVer 
+    {
+        position: absolute;
+        bottom: 10%;
+        left: 44%;
+        width: calc(100% / 8);
+        height: calc(60% / 10);
+        background: #FF5700;
+        color: #ffffff;
+        font-family: "Segoe_UI";
+        font-size: 80%;
+        outline: none;
+    }
+
+    #carousel1 .carousel-inner
+    {
+        position: relative;
+        width: 70%;
+        height: 100%;
+        left: 15%;
+        
+    }
+
+    /*//////////////////////////////////////Info del carrusel///////////////////////////////////////////////////////*/
+    #carousel1 .carousel-inner .carousel-item
+    {
+        height: 100%;
+        width: 100%;
+    }
+
+
+    #carousel1 .carousel-inner .carousel-item img
+    {
+        position: relative;
+        left: 1%;
+        width: 98%;
+        top: 20%;
+        height: 50%;
+        border: 1px solid #000;
+        box-shadow: -5px 6px 7px -1px rgba(0,0,0,0.75);
+        -webkit-box-shadow: -5px 6px 7px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: -5px 6px 7px -1px rgba(0,0,0,0.75);
+    }
+
+    /*////////////////////////////////////Buscador de objetos por carros/////////////////////////////////////////////*/
+    .Buscador_Autos
+    {
+        margin-top: 4%;
+        height: 300px;
+        width: 100%;
+    }
+
+    .Buscador_Autos .barraB
+    {
+        position: relative;
+        top: 22.5%;
+        height: 55%;
+
+    }
+
+    /*Codigo del boxSelector*/
+    
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	padding: 40px 0;
+}
+
+.selectbox {
+	width: 50%;
+	margin: auto;
+	position: relative;
+}
+
+.select {
+	background: #fff;
+	width: 100%;
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, .16);
+	border-radius: 10px;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: .2s ease all;
+	margin-bottom: 30px;
+	padding: 30px;
+	position: relative;
+	z-index: 200;
+	border: 2px solid transparent;
+}
+
+.select.active,
+.select:hover {
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, .16);
+	border: 2px solid #213f8f;
+}
+
+.select.active:before {
+	content: "";
+	display: block;
+	height: 0;
+	width: 0;
+	border-top: 15px solid #213f8f;
+	border-right: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	border-left: 15px solid transparent;
+	position: absolute;
+	bottom: -30px;
+	left: calc(50% - 15px);
+}
+
+.select i {
+	font-size: 30px;
+	margin-left: 30px;
+	color: #213f8f;
+}
+
+.titulo {
+	margin-bottom: 10px;
+	color: #000;
+	font-weight: 600;
+	font-size: 30px;
+}
+
+.descripcion {
+	font-size: 18px;
+	color: #434343;
+}
+
+.opciones {
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 0px 5px 10px rgba(0,0,0,.16);
+	max-height: 400px;
+	overflow: auto;
+	z-index: 100;
+	width: 100%;
+	display: none;
+}
+
+.opciones.active {
+	display: block;
+	animation: fadeIn .3s forwards;
+}
+
+@keyframes fadeIn {
+	from {
+		transform: translateY(-200px) scale(.5);
+	}
+	to {
+		transform: translateY(0) scale(1);
+	}
+}
+
+.contenido-opcion {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	transition: .2s ease all;
+}
+
+.opciones .contenido-opcion {
+	padding: 30px;
+}
+
+.contenido-opcion img {
+	width: 60px;
+	height: 60px;
+	margin-right: 30px;
+}
+
+.opciones .contenido-opcion:hover {
+	background: #213F8F;
+}
+
+.opciones .contenido-opcion:hover .titulo,
+.opciones .contenido-opcion:hover .descripcion {
+	color: #fff;
+}
+
+
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media screen and (max-width : 1450px) 
+{
+    .CarruselBod
+    {
+        height: 550px;
+    }
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media screen and (max-width : 1280px )  and (max-height : 1024px)
+{
+    .CarruselBod
+    {
+        margin-top: 3%;
+    }
+}
+
+/*////////*/
+@media screen and (max-width : 950px) {
+    /*/////////////////////////////////////////BAR MENU////////////////////////////////////////////////*/
+    header
+    {
+        height: 40px;
+    }
+
+    .logo
+    {
+        width: 90px;
+        height: 35px;
+    }
+
+
+    .barraNav input[type="text"]
+    {
+        font-size: 12px;
+    }
+
+    .barraNav input[type="image"]
+    {
+        width: 23px;
+        height: 23px;
+    }
+
+    /*//////////////////////////////////////////CONTENIDO/////////////////////////////////////////////////////////////*/
+    main
+    {
+        margin-top: 60px;
+    }
+
+    /*///////////////////////////////////////NAV BAR//////////////////////////////////////////////////////////////*/
+    .Nav_bar2
+    {
+        height: 60px;
+    }
+    
+    .nav_b  .card a img
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav_b  .card a p 
+    {
+        font-size: 13px;
+    }
+
+    .inicio
+    {
+        width: 90px;
+    }
+
+    .inicio a
+    {
+        font-size: 12px;
+    }
+
+
+    .carrito
+    {
+        width: 60px;
+    }
+
+    .carrito a img
+    {
+        width: 30px;
+        height: 25px;
+    }
+
+    /*/////////////////////////////////////////Carrusel////////////////////////////////////////////////*/
+    .CarruselBod
+    {
+        height: 500px
+    }
+    
+    .carousel-indicators li 
+    {
+        width:7px !important;
+        height: 7px !important;
+        border-radius: 50%;
+    }
+    
+    #carousel1 .carousel-inner .botonVer 
+    {
+        height: calc(60%/15);
+        font-size: 60%;
+    }
+
+    /*//////////////////////////////////////Info del carrusel///////////////////////////////////////////////////////*/
+    #carousel1 .carousel-inner .carousel-item img
+    {
+        top: 30%;
+        height: 42%;
+    }
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+@media screen and (max-width : 750px){
+    .logo
+    {
+        width: 75px;
+        height: 25px;
+    }
+
+    .barraNav
+    {
+        width: 40%;
+        height: 60%;
+        display: flex;
+        z-index: 1000;
+    }
+
+    .barraNav input[type="text"]
+    {
+        font-size: 10px;
+        border-right: none;
+    }
+
+    .barraNav .unir
+    {
+        width: 20px;
+    }
+
+    .barraNav input[type="image"]
+    {
+        width: 10px;
+        height: 10px;
+    }
+
+    /*//////////////////////////////////////////CONTENIDO/////////////////////////////////////////////////////////////*/
+    main
+    {
+        margin-top: 60px;
+    }
+
+    /*///////////////////////////////////////NAV BAR//////////////////////////////////////////////////////////////*/
+    .Nav_bar2
+    {
+        height: 40px;
+    }
+
+    .nav_b  .card a img
+    {
+        width: 25px;
+        height: 25px;
+    }
+
+    .nav_b  .card a p 
+    {
+        font-size: 9px;
+    }
+
+    /*/////////////////////////////////////////Carrusel////////////////////////////////////////////////*/
+    .CarruselBod
+    {
+        height: 400px
+    }
+    
+    .carousel-indicators li 
+    {
+        width:5px !important;
+        height: 5px !important;
+    }
+    
+    #carousel1 .carousel-inner .botonVer 
+    {
+        left: 42%;
+        bottom: 0%;
+        font-size: 55%;
+        width: calc(100% / 6);
+        height: calc(60% / 8);
+    }
+
+    #carousel1 .carousel-indicators
+    {
+        bottom: -10px !important;
+    }
+
+    #carousel1 .carousel-inner
+    {
+        width: 100%;
+        left: 0%;
+        height: 90%;
+    }
+
+    #carousel1 .carousel-inner .carousel-item img
+    {
+        top: 18%;
+        width: 100%;
+        height: 70%;
+    }
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+@media screen and (max-width : 520px) {
+    /*/////////////////////////////////////////BAR MENU////////////////////////////////////////////////*/
+    header
+    {
+        border: 0.1px solid rgba(0,0,0,0.6);
+        height: 30px;
+        box-shadow: -1px 4px 5px  rgba(0,0,0,0.6);
+        -webkit-box-shadow: -1px 4px 5px  rgba(0,0,0,0.6);
+        -moz-box-shadow: -1px 4px 5px  rgba(0,0,0,0.6);
+    }
+
+    .logo
+    {
+        width: 60px;
+        height: 20px;
+    }
+
+    .barraNav
+    {
+        width: 40%;
+        height: 60%;
+        display: flex;
+        z-index: 1000;
+    }
+
+    .barraNav input[type="text"]
+    {
+        font-size: 7px;
+        border-right: none;
+    }
+
+    .barraNav .unir
+    {
+        width: 20px;
+    }
+
+    .barraNav input[type="image"]
+    {
+        width: 10px;
+        height: 10px;
+    }
+
+    .inicio
+    {
+        width: 70px;
+    }
+
+    .inicio a
+    {
+        font-size: 8px;
+    }
+
+    .carrito
+    {
+        width: 40px;
+    }
+
+    .carrito a img
+    {
+        width: 25px;
+        height: 20px;
+    }
+
+    /*//////////////////////////////////////////CONTENIDO/////////////////////////////////////////////////////////////*/
+    main
+    {
+        margin-top: 40px;
+    }
+
+    /*///////////////////////////////////////NAV BAR//////////////////////////////////////////////////////////////*/
+    .Nav_bar2
+    {
+        height: 35px;
+    }
+    
+    .nav_b  .card a img
+    {
+        width: 20px;
+        height: 20px;
+    }
+
+    .nav_b  .card a p 
+    {
+        font-size: 7px;
+    }
+
+    /*/////////////////////////////////////////Carrusel////////////////////////////////////////////////*/
+    .CarruselBod
+    {
+        margin-top: 5%;
+        width: 94%;
+        height: 200px;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    
+    #carousel1 .carousel-inner .botonVer 
+    {
+        left: 41.6%;
+        bottom: 0%;
+        font-size: 52%;
+        width: calc(100% / 6);
+        height: calc(60% / 6);
+    }
+
+    #carousel1 .carousel-indicators
+    {
+        bottom: -15px !important;
+    }
+
+    #carousel1 .carousel-inner
+    {
+        width: 100%;
+        left: 0%;
+        height: 90%;
+    }
+
+    #carousel1 .carousel-inner .carousel-item img
+    {
+        top: 18%;
+        width: 100%;
+        height: 70%;
+    }
+}
+
+
+@media screen and (max-width : 402px) {
+    .cuadro1
+    {
+        width: 8%;
+        height: 100%;
+    }
+
+    .cuadro2
+    {
+        width: 8%;
+        height: 100%;
+    }
+
+
+    .nav_b
+    {
+        width: 84%;
+    }
+
+    /*/////////////////////////////////////////Carrusel////////////////////////////////////////////////*/
+    
+    #carousel1 .carousel-inner .botonVer 
+    {
+        left: 40%;
+        bottom: 10%;
+        font-size: 52%;
+        width: calc(100% / 5);
+        height: 15px;
+    }
+
+    #carousel1 .carousel-indicators
+    {
+        bottom: -20px !important;
+    }
+}
