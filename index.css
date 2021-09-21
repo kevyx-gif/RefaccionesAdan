@@ -1018,6 +1018,7 @@ main
 
 .CarruselCat #carousel-example
 {
+    visibility: visible;
     background: var(--GrisPaleta);
     width: 100%;
     height: 100%;
@@ -1075,6 +1076,89 @@ main
     opacity: 1;
 }
 
+/*Carrusel de catalogos solo para cel*/
+.CarruselCat .Catalogos
+{
+    visibility: hidden;
+    z-index: 5;
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--GrisPaleta);
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.CarruselCat .Catalogos .Cajas
+{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.CarruselCat .Catalogos .Cajas .boxM
+{
+    width: calc(100% / 3);
+    height: 70%;
+}
+
+.CarruselCat .Catalogos .Cajas .boxM .foto1
+{
+    background-image: url("refacciones obj/SAILUN.png");
+    background-repeat: no-repeat;
+    width: 92%;
+    height: 100%;
+    background-position: center;
+    background-size: 100%;
+    padding-left: 4%;
+    padding-right: 4%;
+    background-color: white;
+}
+
+.CarruselCat .Catalogos .Cajas .boxM .foto2
+{
+    background-image: url("refacciones obj/SUNFULL.png");
+    background-repeat: no-repeat;
+    width: 92%;
+    height: 100%;
+    background-position: center;
+    background-size: 100%;
+    padding-left: 4%;
+    padding-right: 4%;
+    background-color: white;
+}
+
+.CarruselCat .Catalogos .Cajas .boxM .foto3
+{
+    background-image: url("refacciones obj/TORNEL.png");
+    background-repeat: no-repeat;
+    width: 92%;
+    height: 100%;
+    background-position: center;
+    background-size: 100%;
+    padding-left: 4%;
+    padding-right: 4%;
+    background-color: white;
+}
+.CarruselCat .Catalogos .BotonVerMas
+{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
 /*/////////////////////////////////Footer/////////////////////////////*/
 footer
 {
@@ -1090,7 +1174,7 @@ footer .BarraBuscador
 {
     width: 100%;
     height: 30%;
-    display: flex;
+    display: flex; 
     align-content: space-around;
     align-items: center;
     justify-content: space-around;
@@ -1238,6 +1322,7 @@ footer .Contactos .Cuadro3 .RedesS img:nth-child(3)
 /*////////*/
 @media screen and (max-width : 960px) 
 {
+    /*Carrusel de anuncios*/
     .Carrusel_Anuncios
     {
         visibility: hidden;
@@ -1245,6 +1330,17 @@ footer .Contactos .Cuadro3 .RedesS img:nth-child(3)
 
 
     .Marcas_Cel
+    {
+        visibility: visible;
+    }
+
+    /*Carrusel de catalogos*/
+    .CarruselCat #carousel-example
+    {
+        visibility: hidden;
+    }
+    
+    .CarruselCat .Catalogos
     {
         visibility: visible;
     }
