@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--Link para el boxSelector-->
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-    
+
 </head>
 <body>
     <!--Inicio del Header, Estructura de los 2 navbar-->
@@ -314,33 +314,38 @@
         <!--/////////////////////////////////////////////////////////////////////////-->
         <section class="TiposdeVenta">
             <div class="estructura">
-                <div class="boxTipo">
-                    <a href="#">
-                        <img src="refacciones obj\llantas.png">
-                        <h2>LLantas</h2>
-                    </a>
+                <div class="parBox">
+                    <div class="boxTipo">
+                        <a href="#">
+                            <img src="refacciones obj\llantas.png">
+                            <h2>LLantas</h2>
+                        </a>
+                    </div>
+    
+                    <div class="boxTipo">
+                        <a href="#">
+                            <img src="refacciones obj\accesorios.png">
+                            <h2>Accesorios</h2>
+                        </a>
+                    </div>
                 </div>
 
-                <div class="boxTipo">
-                    <a href="#">
-                        <img src="refacciones obj\accesorios.png">
-                        <h2>accesorios</h2>
-                    </a>
+                <div class="parBox">
+                    <div class="boxTipo">
+                        <a href="#">
+                            <img src="refacciones obj\frenos.png">
+                            <h2>Frenos</h2>
+                        </a>
+                    </div>
+    
+                    <div class="boxTipo">
+                        <a href="#">
+                            <img src="refacciones obj\frenos.png">
+                            <h2>Frenos</h2>
+                        </a>
+                    </div>
                 </div>
-
-                <div class="boxTipo">
-                    <a href="#">
-                        <img src="refacciones obj\frenos.png">
-                        <h2>frenos</h2>
-                    </a>
-                </div>
-
-                <div class="boxTipo">
-                    <a href="#">
-                        <img src="refacciones obj\frenos.png">
-                        <h2>frenos</h2>
-                    </a>
-                </div>
+                
             </div>  
         </section>
         <!--//////////////////////////////////Anuncio de marcas////////////////////////////-->  
@@ -675,7 +680,7 @@
         <!--//////////////////Boton de busqueda de Locales////////////-->
         <section class="btnBusqueda">
             <div class="ContenedorBtn">
-                <button type="button" href="#">¡ Búscanos en tu Ciudad !</button>
+                <button type="button" id="irMapa">¡ Búscanos en tu Ciudad !</button>
                 <h3>Ve el mapa de sucursales cerca de ti</h3>
             </div>
         </section>
@@ -750,7 +755,7 @@
 
                         <!--Boton Ver mas-->
                         <div class="boxBn">
-                            <button href="#" type="button">¡ Ver Todos !</button>
+                            <button id ="DescargarCat" type="button">¡ Ver Todos !</button>
                         </div>
                         <!--Controles de indicadores-->
                         <ol class="carousel-indicators">
@@ -760,6 +765,7 @@
                         </ol>
 
                         <div class="Catalogos">
+                            <h1>Descarga los catálogos de nuestros proveedores</h1>
                             <div class="Cajas">
                                 <div class="boxM"><div class="foto1"></div></div>
                                 <div class="boxM"><div class="foto2"></div></div>
@@ -777,7 +783,7 @@
         <section class="BarraBuscador">
             <p>Danos tu correo para mandarte ofertas</p>
             <input type="text" placeholder="Example : dasdadas@.com" id="barraDeCorreo">
-            <button href="#" type="button">Aceptar</button>
+            <button id="EnviarCorreo" type="button">Aceptar</button>
         </section>
         <section class="Contactos">
             <div class="Cuadro1">
@@ -800,6 +806,8 @@
             </div>
         </section>
     </footer>
+
+
 
     <script type="text/javascript" src="index.js"></script>
 

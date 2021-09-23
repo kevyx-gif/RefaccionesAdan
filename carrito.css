@@ -1,0 +1,151 @@
+@font-face {
+    font-family: "Segoe_UI";
+    src: url("fonts/SegoeUIBoldItalic.ttf");
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+    text-decoration: none !important;
+}
+
+/*Variables de color*/
+:root
+{
+    --AzulPaleta : #0088FF; /* rgba (0,136,240) */
+    --GrisPaleta : #464646; /* rgba (70,70,70)  */
+}
+
+/* Estilo de la scrolBar*/
+::-webkit-scrollbar {
+    width: 8px;
+    background: rgba(70,70,70);
+    
+}
+::-webkit-scrollbar-thumb{
+    background: rgba(255,255,2525,0.6);
+}
+
+body
+{
+    background: #ffffff;
+}
+/*////////////////////////////////////////////CSS para 1920 x 1080//////////////////////////////////////////////////////////////////*/
+    /*/////////////////////////////////////////BAR MENU////////////////////////////////////////////////*/
+header
+{
+    /*Evitar seleccion con el raton*/
+    -moz-user-select: none; 
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+    /*/////////////////////////////////*/
+    /*Posicion del navbar*/
+    width: 100%;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    /*Estilo del navbar*/
+    box-sizing: border-box;
+    background: linear-gradient(150deg, rgba(255,255,255,1) 52%, rgba(0,136,255,1) 52%);
+    border: 1px solid black;
+    box-shadow: -1px 9px 5px -1px rgba(0,0,0,0.58);
+    -webkit-box-shadow: -1px 9px 5px -1px rgba(0,0,0,0.58);
+    -moz-box-shadow: -1px 9px 5px -1px rgba(0,0,0,0.58);
+    z-index: 10000;
+}
+
+.Nav_bar
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo
+{
+    width: 140px;
+    height: 80%;
+}
+
+.barraNav
+{
+    width: 50%;
+    height: 80%;
+    display: flex;
+}
+
+.barraNav input[type="text"]
+{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    border-right: none;
+    padding-left: 2%;
+    outline: none;
+    font-family: "Segoe_UI";
+}
+
+.barraNav .unir{
+    background: #ffffff;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: none;
+    height: 90%;
+    width: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.barraNav input[type="image"]
+{
+    width: 25px;
+    height: 25px;
+}
+
+.inicio
+{
+    width: 200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inicio a
+{
+    font-family: "Segoe_UI";
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+
+.carrito
+{
+    width: 70px;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrito a
+{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.carrito a img {
+    width: 40px;
+    height: 80%;
+}
